@@ -13,6 +13,26 @@
         <title>Natours</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <!-- header section start-->
         <header class="header">
             <div class="header__logo-box">
@@ -23,7 +43,7 @@
                     <span class="heading-primary--main">Outdoors</span>
                     <span class="heading-primary--sub">Is where life happens</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
         <!-- header section finish-->
@@ -104,7 +124,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -137,7 +157,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +187,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +217,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$897</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -318,13 +338,33 @@
                     </div>
                 </div>
                 <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        Built by <a href="https://www.udemy.com/user/jonasschmedtmann/" target="_blank" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank" class="footer__link">Advanced CSS and SASS</a>. 
-                        <h4 class="u-center-text">Copyright &copy; by Jonas Schmedtmann.</h4>
+                    <p class="u-center-text footer__copyright">
+                        Design built by <a href="https://www.udemy.com/user/jonasschmedtmann/" target="_blank" class="footer__link">Jonas Schmedtmann</a> for his course <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank" class="footer__link">Advanced CSS and SASS</a>. 
+                        Implemented by <a href="https://github.com/lucasaleixo" target="_blank" class="footer__link">LUCAS ALEIXO</a> in order to improve his skills in CSS and SASS.
                     </p>
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis justo non dictum efficitur. Pellentesque ut convallis nunc, vitae pretium mi. Nunc imperdiet ipsum quis sapien suscipit, id mollis augue fermentum. Morbi eget orci dui. Praesent finibus vestibulum tortor, nec tempus dolor condimentum vitae. Donec sit amet pretium mi. Vivamus sem nisi, pulvinar at tortor non, pellentesque maximus sapien. Nunc eu tortor arcu. In hac habitasse platea dictumst. Fusce lobortis aliquam ante ac scelerisque. Curabitur eu sapien convallis, volutpat felis vel, mollis dolor. Nunc porttitor mattis lectus sed feugiat. Integer a lacus ac nisl tempus tincidunt vitae at odio. Sed ac purus in justo lacinia maximus.
+                        Pellentesque hendrerit, ligula ut pellentesque consequat, nisi justo facilisis dui, eget porta mi libero non nisl. Sed ac metus id risus rhoncus tincidunt ut eu quam. Pellentesque fringilla urna neque, in euismod nunc facilisis et. In feugiat lacinia pretium. Nam vitae erat vitae nunc tincidunt sollicitudin. Proin porttitor dui vel arcu viverra, ut ullamcorper nunc accumsan. Mauris non erat a urna ullamcorper sollicitudin. Donec vitae nulla venenatis, consectetur massa eget, vehicula risus. Sed dui tortor, gravida nec dui eu, cursus varius neque. Sed sed aliquet turpis. Aliquam blandit convallis justo.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
  
